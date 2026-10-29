@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDG Buddy - Sustainability Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🌍 SDG Buddy</div>
+    <p>Your guide to a better, sustainable world</p>
+  </header>
+
+  <main class="chat-container">
+    <div class="welcome">
+      <div class="earth">🌱</div>
+      <h1>Hello, Changemaker!</h1>
+      <p>Ask me anything about the 17 Sustainable Development Goals.</p>
+    </div>
+
+    <div class="quick-questions">
+      <button data-question="What are the SDGs?">🌍 What are SDGs?</button>
+      <button data-question="Tell me all 17 SDGs">🎯 All 17 Goals</button>
+      <button data-question="How can students help?">🙋 Student Actions</button>
+      <button data-question="Why are SDGs important?">💡 Why SDGs?</button>
+    </div>
+
+    <section id="chat" class="chat" aria-live="polite">
+      <div class="message bot">
+        Hi! 👋 I'm SDG Buddy. Ask me about poverty, education,
+        climate change, clean water, or any of the 17 SDGs!
+      </div>
+    </section>
+
+    <form id="chat-form" class="input-area">
+      <input id="user-input" type="text"
+        placeholder="Ask me about sustainability..."
+        autocomplete="off" aria-label="Your question" required>
+      <button type="submit">Send ➤</button>
+    </form>
+    <p class="note">🌿 Small actions today create a better tomorrow.</p>
+  </main>
+
+  <footer>School Project | United Nations Sustainable Development Goals</footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
